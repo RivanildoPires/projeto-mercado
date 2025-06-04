@@ -2,7 +2,7 @@ import "./TelaLogin.css";
 
 const TelaLogin = () => {
   return (
-    <div className="main-container">
+    <div className="bg-diagonal-gradient h-screen w-full">
       <div className="container-box">
         <div className="form-container">
           <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -18,7 +18,7 @@ const TelaLogin = () => {
             </div>
 
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form action="#" method="POST" className="space-y-6">
+              <form className="space-y-6">
                 <div>
                   <label
                     htmlFor="email"

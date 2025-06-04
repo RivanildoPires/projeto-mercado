@@ -1,7 +1,24 @@
-.main-container {
-    background-image: url(../assets/fundo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+@layer utilities {
+  .bg-diagonal-gradient {
+    background: linear-gradient(
+      135deg,
+      #FFD700 0%,
+      #FFEEA8 30%,
+      #FFF5CC 60%,
+      #FFFFFF 100%
+    );
+    background-size: 200% 200%;
+    animation: diagonalGradient 12s ease infinite;
+  }
+  
+  @keyframes diagonalGradient {
+    0%, 100% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+  }
 }
 
 .container-box {
