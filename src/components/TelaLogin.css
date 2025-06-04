@@ -1,0 +1,17 @@
+.main-container {
+    background-image: url(../assets/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-box {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    width: 400px;
+}
