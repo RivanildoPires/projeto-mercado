@@ -1,0 +1,21 @@
+button {
+    padding: 4px 6px;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main-container {
+    display: flex;
+}
+
+.container-item {
+    border: 1px solid;
+    min-width: 1000px;
+    height: 677px;
+}
+
+.products{
+    display: flex;
+    
+}
