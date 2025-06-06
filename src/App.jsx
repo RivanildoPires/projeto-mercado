@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/telaPrincipal" element={<TelaPrincipal />} />
-        <Route path="/login" element={<TelaLogin />} />
+        <Route path="/" element={<TelaLogin />} />
       </Routes>
     </Router>
 
