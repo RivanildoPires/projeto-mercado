@@ -233,19 +233,26 @@ export default function TelaPrincipal() {
         formaPagamento: buyerData.paymentMethod.toLowerCase(),
         vendas: cart.map((item) => ({
           nome: item.nome,
-          quantidade: item.cartQuantity,
           valor: item.valor,
+          categoria: item.categoria.toLowerCase(),
           desconto: item.itemDiscount,
+          quantidade: item.cartQuantity,
         })),
       };
 
+      console.log(vendaDTO);
+
+      console.log("Enviando vendaDTO:", JSON.stringify(vendaDTO, null, 2));
+
       const response = await axios.post(
-        `${SALE_API_URL}/finalizar/${currentSaleId}`,
+        `http://localhost:8080/venda/finalizar/${currentSaleId}`,
         vendaDTO.vendas,
         {
           responseType: "blob",
         }
       );
+
+
 
       const pdfBlob = new Blob([response.data], { type: "application/pdf" });
       const pdfUrl = URL.createObjectURL(pdfBlob);
